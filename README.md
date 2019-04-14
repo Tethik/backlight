@@ -15,6 +15,8 @@ Usage:
 
 ## Install
 
+Requires golang. No binary releases at this point.
+
 ```
 git clone https://github.com/Tethik/backlight
 make
