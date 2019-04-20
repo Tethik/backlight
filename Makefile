@@ -8,5 +8,6 @@ clean:
 	rm backlight
 
 install: backlight
-	setcap cap_dac_override+ep ./backlight
-	mv backlight /usr/local/bin/
+	cp backlight /usr/local/bin/
+	setcap cap_dac_override+ep /usr/local/bin/backlight
+	
