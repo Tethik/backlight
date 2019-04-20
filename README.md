@@ -35,3 +35,14 @@ sudo make install
 ```
 
 _Why sudo?_ To allow the program access to sysfs from a normal user the install script sets `cap_dac_override`.
+
+### i3 configuration
+
+I originally built this for my own i3 setup. The following is the configuration I use to
+bind the brightness keys on my laptop to run this backlight program.
+
+```
+# Sreen brightness controls
+bindsym XF86MonBrightnessUp exec backlight inc intel_backlight 50
+bindsym XF86MonBrightnessDown exec backlight dec intel_backlight 50
+```
