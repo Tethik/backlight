@@ -15,7 +15,18 @@ Usage:
 
 ## Install
 
-Requires golang. No binary releases at this point.
+For x64 you can download and install the released binary with the following script.
+
+```bash
+wget https://github.com/Tethik/backlight/releases/download/1.0.0/backlight.0-x64
+chmod +x backlight.0-x64
+sudo mv backlight.0-x64 /usr/local/bin/backlight
+sudo setcap cap_dac_override+ep /usr/local/bin/backlight
+```
+
+### Build from source
+
+Requires that you have golang installed.
 
 ```
 git clone https://github.com/Tethik/backlight
