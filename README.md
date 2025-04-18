@@ -18,10 +18,12 @@ Usage:
 For x64 you can download and install the released binary with the following script.
 
 ```bash
-wget https://github.com/Tethik/backlight/releases/download/1.0.0/backlight.0-x64
-chmod +x backlight.0-x64
-sudo mv backlight.0-x64 /usr/local/bin/backlight
+wget https://github.com/Tethik/backlight/releases/latest/download/backlight
+wget https://github.com/Tethik/backlight/releases/latest/download/backlight-completion.sh
+chmod +x backlight
+sudo mv backlight /usr/local/bin/backlight
 sudo setcap cap_dac_override+ep /usr/local/bin/backlight
+sudo mv backlight-completion.sh /etc/bash_completion.d/backlight
 ```
 
 ### Build from source
